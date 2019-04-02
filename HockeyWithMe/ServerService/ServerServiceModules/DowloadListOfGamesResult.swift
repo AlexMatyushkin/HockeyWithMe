@@ -18,7 +18,7 @@ class DowloadListOfGamesResult: DownoloadGamesResult{
             url = URL(string: urlString)!
         }else if let date = date{
             let urlString = ("\(urlResourse)?date=\(date)")
-            url = URL(string: urlString)!
+            url = URL(string: urlString)! // GUARD
         }else{
             url = URL(string: urlResourse)!
         }
